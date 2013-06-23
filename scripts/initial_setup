@@ -1,3 +1,18 @@
 #! /bin/bash
 
+# Phases
+# 1. Ruby with gems
+# 2. bundler installed
+# 3. git clone https://github.com/jeffmccune/raspisound
+# 4. bundle install --path .bundle/gems/
+
+## Unknown phase scripts below, in rough order of setup from an initial wheezy
+## system
+
+# Ruby and stuff
 apt-get install -y zsh vim mpg123 git ruby rubygems
+
+# Bluetooth PAN requirements
+# I read about how to do this at [Raspberry Pi Bluetooth
+# Tethering](http://blog.kugelfish.com/2012/10/look-ma-no-wires-raspberry-pi-bluetooth.html)
+sudo apt-get install bluetooth bluez-utils bluez-compat
